@@ -1,0 +1,39 @@
+
+body
+{
+	font-family: Verdana;
+	background:white;
+}
+a:link
+{
+	background-color:#e6e6e6;
+}
+a:hover
+{
+	background-color:white;
+}
+ul.navbar
+{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #e6e6e6;
+	margin-top:-9px;
+	margin-left:-8x;
+	border:1px #e6e6e6;
+	border-radius:8px;
+}
+li a.navlink
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  
+}
+li.navitem
+{
+  float: left;
+  border-right:1px;
+  
+}
