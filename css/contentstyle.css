@@ -1,0 +1,78 @@
+
+body
+{
+	background:#ccc;
+}
+p.breadcrumb
+{
+	margin-top:-18px;
+	text-align:left;
+	text-decoration:underline;
+	
+}
+ul.navbar
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	margin-bottom:20px;
+}
+ul.sitelist1
+{
+	margin-top:-20px;
+	list-style-type:none;
+	width:250px;
+	height:500px;
+}
+ul.sitelist
+{
+	list-style-type:none;
+	width:250px;
+	height:500px;
+}
+div.entry
+{
+	column-count: 2;
+	
+}
+div.sitemap
+{
+	margin-top:20px;
+	column-count: 3;
+	background-color: #333;
+}
+h2
+{
+	text-align:center;
+	color:#ccc;
+}
+li.siteitem
+{
+	float:left;
+}
+li.navitem
+{
+  float: left;
+}
+img
+{
+	height:250px;
+	width:250px;
+	float:right;
+}
+li a.navlink
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a.sitelink
+{
+	display: block;
+	color: white;
+	text-align: center;
+	padding:5px,5px;
+}
