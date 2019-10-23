@@ -8,9 +8,9 @@
 <body>
 <!--Div tag learned on w3schools.com-->
 	<ul class="navbar">
-		<li class="navitem"><a class="navlink" href="html/HomeCemetery.html">Homewood Cemetery</a></li>
-		<li class="navitem"><a class="navlink" href="html/StPaul.html">Saint Paul Cathedral</a></li>
-		<li class="navitem"><a class="navlink" href="html/Calvary.html">Calvary United Methodist Church</a></li>
+		<li class="navitem"><a class="navlink" href="/html/HomeCemetery.html">Homewood Cemetery</a></li>
+		<li class="navitem"><a class="navlink" href="/html/StPaul.html">Saint Paul Cathedral</a></li>
+		<li class="navitem"><a class="navlink" href="/html/Calvary.html">Calvary United Methodist Church</a></li>
 	</ul>
 <div class="entry">
 	
@@ -30,22 +30,22 @@
 <div class="sitemap">
 	<ul class="sitelist1">
 		<h2>Pittsburgh Locale</h2>
-		<li><a class="sitelink" href="html/Schenely.html">Schenely Park</a></li>
-		<li><a class="sitelink" href="html/Pam.html">Pamela's Diner</a></li>
-		<li><a class="sitelink" href="html/Phipps.html">Phipps Conservatory </a></li>
-		<li><a class="sitelink" href="html/Col.html">Cathedral of Learning</a></li>
-		<li><a class="sitelink" href="html/Heinz.html">Heinz Field</a></li>
+		<li><a class="sitelink" href="/html/Schenely.html">Schenely Park</a></li>
+		<li><a class="sitelink" href="/html/Pam.html">Pamela's Diner</a></li>
+		<li><a class="sitelink" href="/html/Phipps.html">Phipps Conservatory </a></li>
+		<li><a class="sitelink" href="/html/Col.html">Cathedral of Learning</a></li>
+		<li><a class="sitelink" href="/html/Heinz.html">Heinz Field</a></li>
 	</ul>
 	<ul class="sitelist">
 		<h2>Local Churches</h2>
-		<li><a class="sitelink" href="html/ssP&P.html">Saints Peter and Paul Church</a></li>
-		<li><a class="sitelink" href="html/StPaul.html">Saint Paul Cathedral</a></li>
-		<li><a class="sitelink" href="html/Calvary.html">Calvary United Methodist Church</a></li>
+		<li><a class="sitelink" href="/html/ssP&P.html">Saints Peter and Paul Church</a></li>
+		<li><a class="sitelink" href="/html/StPaul.html">Saint Paul Cathedral</a></li>
+		<li><a class="sitelink" href="/html/Calvary.html">Calvary United Methodist Church</a></li>
 	</ul>
 	<ul class="sitelist">
 		<h2>Local Cemeteries</h2>
-		<li><a class="sitelink" href="html/AlCemetery.html">Allegheny Cemetery</a></li>
-		<li><a class="sitelink" href="html/HomeCemetery.html">Homewood Cemetery</a></li>
+		<li><a class="sitelink" href="/html/AlCemetery.html">Allegheny Cemetery</a></li>
+		<li><a class="sitelink" href="/html/HomeCemetery.html">Homewood Cemetery</a></li>
 	</ul>
 </div>
 </body>
