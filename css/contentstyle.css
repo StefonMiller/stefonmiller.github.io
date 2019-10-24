@@ -4,13 +4,13 @@ body
 	font-family: Verdana;
 	background:white;
 }
-a:link
+a.navlink:link
 {
 	background-color:#e6e6e6;
 }
-a:hover
+a.navlink:hover
 {
-	background-color:white;
+	background-color:#d9d9d9;
 }
 ul.navbar
 {
@@ -22,6 +22,29 @@ ul.navbar
 	border:1px #e6e6e6;
 	border-radius:8px;
 }
+ul.dropdown
+{
+    list-style-type:none;
+    width:80%;
+}
+li.dropitemend
+{
+    
+}
+li.dropitem
+{   
+    border-bottom:1px solid black;
+}
+li a.droplink
+{
+    text-decoration:none;
+}
+div.links
+{
+    margin-top:30px;
+	text-align:center;
+}
+
 li a.navlink
 {
   display: block;
@@ -34,6 +57,20 @@ li a.navlink
 li.navitem
 {
   float: left;
-  border-right:1px;
-  
+    border-right:1.5px solid #000000;
+}
+h1
+{
+	text-align:center;
+	font-size:24px;
+}
+h2
+{
+	text-align:center;
+	font-size:18px;
+}
+p
+{
+	text-align:center;
+	font-size:12px;
 }
