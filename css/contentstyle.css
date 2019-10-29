@@ -27,17 +27,30 @@ ul.dropdown
     list-style-type:none;
     width:80%;
 }
-li.dropitemend
+ul.items
 {
-    
+    margin-top:5px;
+    margin-bottom:2px;
+}
+li.dropcat
+{   
+    user-select:none;
+    border-bottom:1px solid black;
+    margin-bottom:10px;
+}
+li.dropcat:hover
+{
+    cursor: pointer;
 }
 li.dropitem
-{   
-    border-bottom:1px solid black;
-}
-li a.droplink
 {
-    text-decoration:none;
+    user-select:none;
+	display:none;
+    
+}
+li.dropitemend
+{
+    display:none;
 }
 div.links
 {
