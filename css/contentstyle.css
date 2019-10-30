@@ -14,6 +14,7 @@ a.navlink:hover
 }
 ul.navbar
 {
+    padding:0;
 	list-style-type: none;
 	overflow: hidden;
 	background-color: #e6e6e6;
@@ -22,6 +23,12 @@ ul.navbar
 	border:1px #e6e6e6;
 	border-radius:8px;
 }
+li a.itemlink
+{
+    user-select auto;
+    color:black;
+    
+}
 ul.dropdown
 {
     list-style-type:none;
@@ -29,14 +36,18 @@ ul.dropdown
 }
 ul.items
 {
+    padding:0;
+    overflow
     margin-top:5px;
     margin-bottom:2px;
+    text-indent:5%;
 }
 li.dropcat
 {   
     user-select:none;
-    border-bottom:1px solid black;
     margin-bottom:10px;
+    border:1px solid;
+    background-color:#e6e6e6;
 }
 li.dropcat:hover
 {
@@ -44,13 +55,17 @@ li.dropcat:hover
 }
 li.dropitem
 {
+    border-top:1px solid;
     user-select:none;
 	display:none;
+    background-color:white;
     
 }
 li.dropitemend
 {
+    border-top:1px solid;
     display:none;
+    background-color:white;
 }
 div.links
 {

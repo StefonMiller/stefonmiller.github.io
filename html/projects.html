@@ -6,96 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Projects</title>
 	<link rel="stylesheet" href="../css/contentstyle.css">
-	<script>
-        function showElements(id)
-        {
-            if(id.innerHTML.charAt(0) == '+')
-            {
-                txt = id.innerHTML.split("");
-                txt[0] = '-';
-                id.innerHTML=txt.join("");
-                c = id.children[0].children;
-                for(i=0; i < c.length; i++)
-                {
-                    c[i].style.display = "block";
-                }
-            }
-            else
-            {
-                txt = id.innerHTML.split("");
-                txt[0] = '+';
-                id.innerHTML=txt.join("");
-                c = id.children[0].children;
-                for(i=0; i < c.length; i++)
-                {
-                    c[i].style.display = "none";
-                }
-            }
-        }
+	<script src="../js/script.js">
     </script>
 </head>
 <body>
     <ul class="navbar">
-		<li class="navitem"><a style="" class="navlink" href="../index.html">Stefon Miller</a></li>
-		<li class="navitem"><a class="navlink" href="../pdf/resume.pdf" target="_blank">Resume</a></li>
-		<li class="navitem"><a class="navlink" href="projects.html">Projects</a></li>
+		<li class="navitem"  onclick="recolor(this)"><a style="" class="navlink" href="../index.html">Stefon Miller</a></li>
+		<li class="navitem" onclick="recolor(this)"><a class="navlink" href="../pdf/resume.pdf" target="_blank">Resume</a></li>
+		<li class="navitem"  onclick="recolor(this)"><a class="navlink" href="projects.html">Projects</a></li>
 	</ul>
-    
+    <h1>Projects</h1>
     <ul class="dropdown">
-        <li class="dropcat" onclick="showElements(this)">+ CS0007: Intro to Programming with Java(2014)
+        <li class="dropcat" onclick="showElements(this)">+ CS0007: Intro to Programming with Java(2013)
 		<ul class="items">
-			<li class="dropitem">- Library implementation using classes</li>
-			<li class="dropitem">- Unit converter utilizing GUI and events</li>
-			<li class="dropitem">- Integration of sound and images into GUI</li>
+            <li class="dropitem"><a class="itemlink" href="https://www.youtube.com/" target="_blank">- Library implementation using classes</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Unit converter utilizing GUI and events</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Integration of sound and images into GUI</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ CS0401: Intermediate Programming with Java(2015)
 		<ul class="items">
-			<li class="dropitem">- Basic control strucure demonstrated through a pie shop</li>
-			<li class="dropitem">- Implementation of a gambling site with user classes</li>
-			<li class="dropitem">- Gameshow program demonstrating OOP and file manipulation</li>
-			<li class="dropitem">- Custom ballot display program using GUI</li>
-			<li class="dropitemend">- Paint program using GUI and canvas</li>
+			<li class="dropitem"><a class="itemlink" href="">- Basic control strucure demonstrated through a pie shop</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation of a gambling site with user classes</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Gameshow program demonstrating OOP and file manipulation</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Custom ballot display program using GUI</a></li>
+			<li class="dropitemend"><a class="itemlink" href="">- Paint program using GUI and canvas</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ CS0445: Data Structures with Java(2016)
 		<ul class="items">
-			<li class="dropitem">- Completed skeleton of RandIndexQueue</li>
-			<li class="dropitem">- Implementation of custom stringbuilder</li>
-			<li class="dropitem">- Implementation of second stringbuilder class and comparison to the first</li>
-			<li class="dropitem">- Implementation of a grid solving program and analysis of its performance</li>
-			<li class="dropitemend">- Implementation of Huffman compression</li>
+			<li class="dropitem"><a class="itemlink" href="">- Completed skeleton of RandIndexQueue</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation of custom stringbuilder</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation and comparison of second stringbuilder</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation and analysis of a grid solving algorithm</a></li>
+			<li class="dropitemend"><a class="itemlink" href="">- Implementation of Huffman compression</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ CS0447: Computer Organization and Assembly(2016)
 		<ul class="items">
-			<li class="dropitem">- Project1</li>
-			<li class="dropitem">- Project2</li>
-			<li class="dropitem">- Project3</li>
-			<li class="dropitem">- Project4</li>
-			<li class="dropitemend">- Project5</li>
+			<li class="dropitem"><a class="itemlink" href="">- Project1</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Project2</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Project3</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Project4</a></li>
+			<li class="dropitemend"><a class="itemlink" href="">- Project5</a></li>
+		</ul>
+        </li>
+        <li class="dropcat" onclick="showElements(this)">+ CS0449: System Software with C(2017)
+		<ul class="items">
+			<li class="dropitem"><a class="itemlink" href="">- Rock paper scissors in C and a bitmap image flipper</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Debugging provided code, and documenting my findings</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Custom implementation of malloc</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Rock paper scissors kernel-level program</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ CS1501: Algorithm Implementation with Java(2019)
 		<ul class="items">
-			<li class="dropitem">- Implementation of a Trie symbol table</li>
-			<li class="dropitem">- Implementation of a Hybrid TrieST</li>
-			<li class="dropitem">- Implementation of LZW compression</li>
-			<li class="dropitem">- Secure chat client using different encryption methods</li>
-			<li class="dropitemend">- Graph traversing/manipulation algorithm representing a network</li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation of a Trie symbol table</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation of a Hybrid TrieST</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Implementation of LZW compression</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Secure chat client using different encryption methods</a></li>
+			<li class="dropitemend"><a class="itemlink" href="">- Graph traversing/manipulation algorithm representing a network</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ CS0134: Intro to website design and development(2019)
 		<ul class="items">
-			<li class="dropitem">- Demonstration of content pages using HTML/CSS, as well as navigation</li>
-			<li class="dropitem">- Project2</li>
+			<li class="dropitem"><a class="itemlink" href="">- Demonstration of content pages and navigation with HTML/CSS</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Project2</a></li>
 		</ul>
         </li>
         <li class="dropcat" onclick="showElements(this)">+ Personal Projects(Various years)
 		<ul class="items">
-			<li class="dropitem">- Ebay purchase manager(2018)</li>
-			<li class="dropitem">- Personal website using HTML/CSS/JS(2019)</li>
-			<li class="dropitem">- Code  database using Google Sheets API and PyQT GUI Framework(2019)</li>
+			<li class="dropitem"><a class="itemlink" href="">- Ebay purchase manager(2018)</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Personal website using HTML/CSS/JS(2019)</a></li>
+			<li class="dropitem"><a class="itemlink" href="">- Database using Google Sheets API and PyQT Framework(2019)</a></li>
 		</ul>
         </li>
     </ul>
