@@ -34,6 +34,10 @@ ul.dropdown
     list-style-type:none;
     width:80%;
 }
+ul.items:hover
+{
+    cursor:default;
+}
 ul.items
 {
     padding:0;

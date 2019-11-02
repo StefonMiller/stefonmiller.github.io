@@ -32,8 +32,3 @@ function showElements(id)
     }
     
 }
-
-function recolor(id)
-{
-    
-}
