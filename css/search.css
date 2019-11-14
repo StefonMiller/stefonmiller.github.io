@@ -1,0 +1,43 @@
+body
+{
+    text-align:center;
+}
+div
+{
+    column-count: 2;
+}
+
+table
+{
+    border:2px solid;
+    width: 30%;
+    border-spacing:0px;
+}
+td
+{
+    text-align: center;
+    vertical-align: top;
+    padding:5px;
+    border-right:1px solid;
+    border-bottom:1px solid;
+    height:20px;
+    width:20px;
+}
+td.lEdge
+{
+    border-right:2px solid;
+}
+td.bEdge
+{
+    border-bottom:2px solid;
+}
+td.boEdge
+{
+    border-right:2px solid;
+    border-bottom:2px solid;
+}
+button
+{
+    margin-top:25px;
+    font-size:18px;
+}

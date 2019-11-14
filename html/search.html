@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DFS vs BFS</title>
+	<link rel="stylesheet" href="../css/search.css">
+    <script src="../js/search.js"></script>
+</head>
+<body>
+    <h1>Live search comparison of BFS and DFS in sudoku</h1>
+    <div>
+        
+        <table style="width:100%" id="BFSArray">
+        <tr>
+            <td></td>
+            <td>4</td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td class="lEdge">2</td>
+            <td></td>
+            <td>1</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td>3</td>
+            <td>5</td>
+            <td class="lEdge">1</td>
+            <td></td>
+            <td>8</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td class="bEdge">3</td>
+            <td class="bEdge">1</td>
+            <td class="boEdge"></td>
+            <td class="bEdge"></td>
+            <td class="bEdge">9</td>
+            <td class="boEdge">4</td>
+            <td class="bEdge">7</td>
+            <td class="bEdge"></td>
+            <td class="bEdge"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>9</td>
+            <td class="lEdge">4</td>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="bEdge">2</td>
+            <td class="bEdge"></td>
+            <td class="boEdge"></td>
+            <td class="bEdge"></td>
+            <td class="bEdge"></td>
+            <td class="boEdge"></td>
+            <td class="bEdge">8</td>
+            <td class="bEdge">9</td>
+            <td class="bEdge"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge">9</td>
+            <td>5</td>
+            <td>2</td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2</td>
+            <td class="lEdge"></td>
+            <td>1</td>
+            <td>6</td>
+            <td class="lEdge">9</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>6</td>
+            <td class="lEdge"></td>
+            <td>8</td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        </table>
+        <h2>BFS</h2>
+        <table style="width:100%" id="DFSArray">
+        <tr>
+            <td></td>
+            <td>4</td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td class="lEdge">2</td>
+            <td></td>
+            <td>1</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td>3</td>
+            <td>5</td>
+            <td class="lEdge">1</td>
+            <td></td>
+            <td>8</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td class="bEdge">3</td>
+            <td class="bEdge">1</td>
+            <td class="boEdge"></td>
+            <td class="bEdge"></td>
+            <td class="bEdge">9</td>
+            <td class="boEdge">4</td>
+            <td class="bEdge">7</td>
+            <td class="bEdge"></td>
+            <td class="bEdge"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>9</td>
+            <td class="lEdge">4</td>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="bEdge">2</td>
+            <td class="bEdge"></td>
+            <td class="boEdge"></td>
+            <td class="bEdge"></td>
+            <td class="bEdge"></td>
+            <td class="boEdge"></td>
+            <td class="bEdge">8</td>
+            <td class="bEdge">9</td>
+            <td class="bEdge"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="lEdge">9</td>
+            <td>5</td>
+            <td>2</td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2</td>
+            <td class="lEdge"></td>
+            <td>1</td>
+            <td>6</td>
+            <td class="lEdge">9</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>6</td>
+            <td class="lEdge"></td>
+            <td>8</td>
+            <td></td>
+            <td class="lEdge"></td>
+            <td></td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        </table>
+        <h2>DFS</h2>
+    </div>
+    
+        <button type="button" onclick="compSearch()">Begin Test</button>
+</body>
+</html>
