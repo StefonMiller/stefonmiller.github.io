@@ -34,30 +34,58 @@ function DFS(arr)
             {
                 var valid = [1, 2, 3, 4, 5, 6, 7, 8, 9];
                 temp = checkRow(arr, i);
-                
+                temp1 = checkCol(arr, j);
+                temp2 = check3x3(arr, i, j);
+                console.log("Rows of " + i + ", " + j + " " + temp);
+                console.log("Columns of " + i + ", " + j + " " + temp1);
+                console.log("3x3 of " + i + ", " + j + " " + temp2);
             }
         }
         
         
     }
 }
-function checkRow(arr, i)
+function checkRow(arr, y)
 {
     var inv = new Array(9);
-    for(j = 0; j < 9; j++)
+    for(y = 0; y < 9; y++)
     {
-        if(arr[i][j].innerHTML != "")
+        if(arr[i][y].innerHTML != "")
         {
-            inv.push(arr[i][j].innerHTML);
+            inv.push(arr[i][y].innerHTML);
         }
     }
     return inv;
 }
-function checkCol(arr, j)
+function checkCol(arr, x)
 {
-    
+    var inv = new Array(9);
+    for(x = 0; x < 9; x++)
+    {
+        if(arr[x][j].innerHTML != "")
+        {
+            inv.push(arr[x][j].innerHTML);
+        }
+    }
+    return inv;
 }
-function check3x3(arr, i, j)
+function check3x3(arr, y, x)
 {
-    
+    var inv = new Array(9);
+    ypos = Math.floor(y/3) * 3;
+    xpos = Math.floor(x/3) * 3;
+    for(k = 0; k < 3; k++)
+    {
+        for(l = 0; l < 3; l++)
+        {
+            tempx = xpos + l;
+            tempy = ypos + k;
+            if(arr[tempy][tempx].innerHTML != "")
+            {
+                inv.push(arr[tempy][tempx].innerHTML);
+            }
+            
+        }
+    }
+    return inv;
 }
